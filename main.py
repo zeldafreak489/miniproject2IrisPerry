@@ -19,5 +19,8 @@
 #     (20/20 points) There should be a README.md file in your project that explains what your project is, how to install the pip requirements, and how to execute the program. Please use the GitHub flavor of Markdown. Be thorough on the explanations.
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
-df = pd.Dataframe()
+df = pd.read_csv("data/netflix_titles.csv")
+
+print(df[["director"]].head())
